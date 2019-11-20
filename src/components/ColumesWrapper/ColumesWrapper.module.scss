@@ -1,0 +1,17 @@
+@import "src/constants/styles";
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: calc(100% - 51px); //header height
+  & > div {
+    width: 50%;
+    &:first-child {
+      border-right: 1px solid $borderCollor;
+    }
+    ol {
+      overflow: auto;
+      max-height: calc(100% - 55px);
+      text-align: left;
+    }
+  }
+}
